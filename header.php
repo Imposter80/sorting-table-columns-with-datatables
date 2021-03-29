@@ -5,16 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"><font></font>
-<font></font>
-<script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script><font></font>
-<script>
-$(document).ready( function () {<font></font>
-    $('#table_id').DataTable();<font></font>
-} );<font></font>
-</script>
-
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"><font></font>
+    <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script><font></font>   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body class="bg-info">
