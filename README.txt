@@ -1,11 +1,11 @@
-Данное приложение позволят отображать список пользователей с возможностью редактирования данных и добавления новых пользователей, используя ajax jquery. 
-Для работы приложения нужно создать Базу данных c  phpMyAdmin:
-$host='localhost';
-$user='root';
-$pass='root';
-$dbname='test_encomage_db';
-$dbtable='users';
-Скрипт для создания таблицы:
+Р”Р°РЅРЅРѕРµ РїСЂРёР»РѕР¶РµРЅРёРµ РїРѕР·РІРѕР»СЏС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ СЃРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ СЃ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РґР°РЅРЅС‹С… Рё РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРІС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, РёСЃРїРѕР»СЊР·СѓСЏ ajax jquery. 
+Р”Р»СЏ СЂР°Р±РѕС‚С‹ РїСЂРёР»РѕР¶РµРЅРёСЏ РЅСѓР¶РЅРѕ СЃРѕР·РґР°С‚СЊ Р‘Р°Р·Сѓ РґР°РЅРЅС‹С… c  phpMyAdmin:
+$dbHost='localhost';
+$dbUser='root';
+$dbPass='root';
+$dbName='test_encomage_db'
+$dbTable='users';
+РЎРєСЂРёРїС‚ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ С‚Р°Р±Р»РёС†С‹:
 create table users(
 	id int not null auto_increment primary key,
 	first_name varchar(255),
@@ -14,9 +14,9 @@ create table users(
 	create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
 	update_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP   
 )
-Для заполнения таблицы можно использовать:
+Р”Р»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ С‚Р°Р±Р»РёС†С‹ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ:
 insert into users(first_name,  last_name, email) values ('Ivan', 'Ivanov', 'i.ivan@test.test');
 insert into users (first_name, last_name, email) values ('Petr', 'Petrov', 'p.petrov@test.test');
 
-поле create_date – будет заполняться автоматически при создании новой записи
-поле update_date - будет изменяться при редактировании данных пользователя.
+РїРѕР»Рµ create_date вЂ“ Р±СѓРґРµС‚ Р·Р°РїРѕР»РЅСЏС‚СЊСЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїСЂРё СЃРѕР·РґР°РЅРёРё РЅРѕРІРѕР№ Р·Р°РїРёСЃРё
+РїРѕР»Рµ update_date - Р±СѓРґРµС‚ РёР·РјРµРЅСЏС‚СЊСЃСЏ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РґР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ.
